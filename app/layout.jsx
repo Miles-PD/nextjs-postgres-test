@@ -1,4 +1,5 @@
 import Nav from './auth/Nav'
+import QueryWrapper from './auth/QueryWrapper'
 import './globals.css'
 
 export const metadata = {
@@ -10,8 +11,10 @@ export default function RootLayout({ children, }) {
   return (
     <html lang="en">
       <body className={`mx-4 md:mx-48 xl:mx-96 font-sans bg-gray-800`}>
-        <Nav />
-        {children}
+        <QueryWrapper>
+          <Nav />
+          {children}
+        </QueryWrapper>
       </body>
     </html>
   )

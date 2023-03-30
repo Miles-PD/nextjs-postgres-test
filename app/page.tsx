@@ -1,14 +1,12 @@
 import Link from 'next/link'
-import styles from './page.module.css'
+import AddPost from './components/AddPost'
 
-async function getPosts() {
-  const res = await fetch('/api/getPosts')
-}
+
 
 export default function Home() {
   return (
-    <main className='py-4 px-48'>
-      
+    <main className=''>
+      <AddPost />
     </main>
   )
 }
