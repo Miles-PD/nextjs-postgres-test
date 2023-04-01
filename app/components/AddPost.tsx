@@ -23,8 +23,8 @@ export default function AddPost() {
                 setIsDisabled(false)
             },
             onSuccess: (data) => {
-                toast.success('Post made', {id: toastPostId})
                 queryClient.invalidateQueries(['posts'])
+                toast.success('Post made', {id: toastPostId})
                 setTitle('')
                 setIsDisabled(false)
             }

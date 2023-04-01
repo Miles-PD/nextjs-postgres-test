@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "prisma/client.tsx", "pages/api/auth/[...nextauth].js", "app/layout.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "prisma/client.tsx", "pages/api/auth/[...nextauth].js", "app/layout.jsx", "pages/api/posts/addComment.js"],
   "exclude": ["node_modules"]
 }
